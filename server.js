@@ -12,7 +12,7 @@ var request = require("request");
 var db = require("./models");
 
 // Initialize Express
-var PORT = process.env.PORT || 3000;
+var PORT = process.env.PORT
 
 var app = express();
 
@@ -158,6 +158,4 @@ mongoose.connect(MONGODB_URI, {
 });
 
 // Start the server
-app.listen(PORT, function() {
-  console.log("App running on port " + PORT + "!");
-});
+app.listen(PORT);
